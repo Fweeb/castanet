@@ -71,7 +71,7 @@ You will need to add a handful of configuration items to your `config.toml` file
     - `youtube` - Name of the YouTube channel. Optional. Example: `"arresteddevops"`
     - `linkedin` - LinkedIn profile name. Optional. This is the part that comes after the `https://www.linkedin.com/in/` in your profile URL. Example: `"mattstratton"`
 
-  - `[params.authors]` - you can have multiple authors avaialable; just make more of each
+  - `[params.authors]` - you can have multiple authors available; just make more of each
     - `[params.authors.USERNAME]` - replace `USERNAME` with an author name. Example: `[params.authors.matt]`
       - `name` - Example: `"Matt Stratton"`
       - `thumbnail` - URL to user's image. Example: `"https://www.arresteddevops.com/img/matt.png"`
