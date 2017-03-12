@@ -1,6 +1,10 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
-  <h1>{{ title .Title }}</h1>
-  {{ .Content }}
+  <div class = "row">
+    <div class = "col-md-12">
+      <h1>{{ title .Title }}</h1>
+      {{ .Content }}
+    </div>
+  </div>
 
-{{ partial "footer.html" . }}
+{{ end }}
