@@ -9,7 +9,7 @@
       {{ range first 1 (where .Data.Pages "Type" "episode") }}
         <div class = "row homepage_episode_row">
           <div class = "col-md-12">
-            <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+            <a href="{{ .Permalink }}"><h2>#{{ .Params.episode }} {{ .Title }}</h2></a>
             <small>Posted on {{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
           </div>
         </div>
@@ -25,7 +25,7 @@
           <div class = "col-md-12">
             <audio controls>
               <source src="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}" type="audio/mpeg" />
-              <a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}}">{{ .Title }}</a>
+              <a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}}">#{{ .Params.episode  }} {{ .Title }}</a>
             </audio>
           </div>
         </div>
@@ -41,7 +41,7 @@
 				{{ range $paginator.Pages }}
           <div class = "row homepage_episode_row">
             <div class = "col-md-12">
-              <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+              <a href="{{ .Permalink }}"><h2>#{{ .Params.episode  }} {{ .Title }}</h2></a>
               <small>Posted on {{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
             </div>
           </div>
@@ -57,7 +57,7 @@
             <div class = "col-md-12">
               <audio controls>
                  <source src="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}" type="audio/mpeg" />
-                  <a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}">{{ .Title }}</a>
+                  <a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}">#{{ .Params.episode  }} {{ .Title }}</a>
               </audio>
             </div>
           </div>
