@@ -17,11 +17,11 @@
     </div>
     <div class = "row">
       <div class = "col-md-12">
+        <p class = "ep-download"><a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}">Download episode</a></p>
         <audio controls>
           <source src="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}" type="audio/mpeg" />
           <a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}">{{ .Title }}</a>
         </audio>
-        <p><a href="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}">Download episode</a></p>
       </div>
     </div>
   </div>
