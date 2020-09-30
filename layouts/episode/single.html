@@ -320,6 +320,15 @@
       </div>
       <!-- disqus ends -->
       {{ end }}
+      {{ with .Site.Params.issoServer }}
+      <!-- isso begins -->
+      <div class="row">
+          <div class="col-md-12">
+              {{ partial "isso.html" . }}
+          </div>
+      </div>
+      <!-- isso ends -->
+      {{ end }}
 
       <div class="row">
         <!-- pager begin -->
