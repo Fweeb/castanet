@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope lang="{{ .Site.LanguageCode }}">
+<html itemscope lang="{{ .Site.Language.Locale }}">
 <head>
 {{ partial "head.html" . }}
 </head>
@@ -11,4 +11,6 @@
       <!-- The part of the page that begins to differ between templates -->
   {{ end }}
 </div> <!-- end middle_container -->
+
+
 {{ partial "footer.html" . }}
