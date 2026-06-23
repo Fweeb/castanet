@@ -25,6 +25,11 @@
           <a class="btn btn-default" href="{{ .Site.Params.itunes_subscribe}}"><i class="fa fa-podcast"></i>&nbsp;Apple Podcasts</a>
         </div>
       {{ end }}
+      {{ if (isset .Site.Params "youtube_subscribe") }}
+        <div class = "col-md-12 subscribe_buttons">
+          <a class="btn btn-default subscribe_buttons" href="{{ .Site.Params.youtube_subscribe }}"><i class="fab fa-youtube"></i>&nbsp;YouTube</a>
+        </div>
+      {{ end }}
       {{ if (isset .Site.Params "android_subscribe") }}
         <div class = "col-md-12 subscribe_buttons">
           <a class="btn btn-default subscribe_buttons" href="{{ .Site.Params.android_subscribe }}"><i class="fab fa-android"></i>&nbsp;Android</a>
